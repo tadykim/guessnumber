@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 요소 다루기</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <style>
+        .all-wrap {
+            width: 70vw;
+            margin: 20px;
+            font-family: "En";
+        }
+
+        h1 {
+            font-family: "BaseB";
+        }
+
+        h2 {
+            font-family: "EnB";
+        }
+
+        fieldset {
+            border: 3px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        fieldset legend {
+            padding: 0 10px;
+        }
+
+        button {
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 5px;
+            background: #777;
+            color: #fff;
+            font-size: 18px;
+            font-family: "En";
+            cursor: pointer;
+        }
+
+        button:hover,
+        button:focus {
+            background: #0af;
+        }
+
+        /*결과(result) 박스*/
+        .result {
+            background: #eee;
+        }
+
+        .result h2 {
+            margin-bottom: 10px;
+        }
+
+        /*.result .pic {}*/
+        .result .pic img {
+            display: block;
+            width: 100%;
+        }
+
+        /*list-1, 색상 명 목록*/
+        .list-1 li {
+            float: left;
+            margin-right: 15px;
+            font-size: large;
+            font-family: "en";
+            line-height: 1.5;
+            letter-spacing: -1px;
+            cursor: pointer;
+        }
+
+        .list-1 li:hover {
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all_wrap">
+        <h1>jQuery DOM</h1>
+        <fieldset class="list-1">
+            <legend>color name</legend>
+            <ul>
+                <li>skyblue</li>
+                <li>slateblue</li>
+                <li>slategreen</li>
+                <li>darkred</li>
+                <li>peachpuff</li>
+            </ul>
+        </fieldset>
+        <fieldset class="list-2">
+            <label for="colorName">
+                color name:
+                <input type="text" id="colorName" placeholder="색상명을 영어로 작성">
+            </label>
+            <button id="next_btn">attr()</button>
+        </fieldset>
+        <fieldset class="result">
+            <h2>COLOR NAME</h2>
+            <p class="pic">
+                <img src="../img/bg_night.jpg" alt="">
+            </p>
+        </fieldset>
+    </div>
+</body>
+
+</html>

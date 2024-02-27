@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: salmon;
+}
+
+.numBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 1px solid #fff;
+    width: 40%;
+}
+
+.numBox h1 {
+    margin-bottom: 20px;
+}
+.numBox p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.numBox input{
+    margin-bottom: 18px;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+.numBox button {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.numBox #btnPlay.on {background: #898989;}
